@@ -117,7 +117,7 @@ int main(int argc, char** argv) {
 				faz com que o b.exe seja executado e não seja executado novamente, evitando execuções
 				duplicadas, caso o processo b.exe já esteja em execução, no final diz que o processo
 				a.exe seja finalizado, caso não tenha o processo ativo retornará um erro mas só
-				indicando que o processo zararadio.exe nao existe
+				indicando que o processo a.exe nao existe
 
 				>>>>>>>>codigos do arquivo está abaixo
 
