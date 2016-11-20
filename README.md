@@ -1,1 +1,2 @@
-# Testes-C-
+# Funcoes-Diversas
+Funções relevantes e muito uteis
