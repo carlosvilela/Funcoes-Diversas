@@ -1,4 +1,4 @@
-import java.io.FileWriter; // usar o comando FileWriter para indicar local e nome do arquivo
+import java.io.FileWriter; // usar o comando FileWriter para criar arquivo no local e nome indicado
 import java.io.PrintWriter; // usar PrintWriter para escrever conteudo do arquivo
 
 class test{
@@ -7,8 +7,8 @@ class test{
 		
 		try{
 		
-		FileWriter arquivo = new FileWriter("test.txt");
-		PrintWriter escreverArquivo = new PrintWriter(arquivo);
+		FileWriter arquivo = new FileWriter("test.txt"); // cria o arquivo
+		PrintWriter escreverArquivo = new PrintWriter(arquivo); // escreve no arquivo
 		escreverArquivo.print("Texto");
 		arquivo.close();
 		
