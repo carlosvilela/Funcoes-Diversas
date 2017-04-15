@@ -3,14 +3,17 @@
 
 .code
 start:
-;Multiplicar com numeros negativos
-mov eax, 0h
-sub eax, 02h ; EAX = -2
-mov ebx, 0h
-sub ebx, 02h ; EBX = -2
 
+mov eax, 02h
+mov ebx, 03h
+mov ecx, 04h
 
-imul ebx ; IMUL para numeros negativos e MUL para numeros positivos
+imul ebx, ecx ; pode multiplicar com qualquer registrador
+; EBX*EAC = (resultado no primeiro - EBX)
+
+mul ecx ; multiplica apenas com o registrador eax, ax, etc..
+; EAX*ECX = (Resultado apenas no EAX)
+
 
 
 end start
