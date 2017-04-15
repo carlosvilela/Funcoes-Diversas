@@ -9,7 +9,7 @@ mov ebx, 03h
 mov ecx, 04h
 
 imul ebx, ecx ; pode multiplicar com qualquer registrador
-; EBX*EAC = (resultado no primeiro - EBX)
+; EBX*ECX = (resultado no primeiro - EBX)
 
 mul ecx ; multiplica apenas com o registrador eax, ax, etc..
 ; EAX*ECX = (Resultado apenas no EAX)
