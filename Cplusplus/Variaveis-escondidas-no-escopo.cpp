@@ -1,3 +1,6 @@
+// O operador de resolução de escopo (::) recupera o valor global de a que está oculto no escopo atual.
+
+
 #include <cstdio>
 
 int a = 1;
