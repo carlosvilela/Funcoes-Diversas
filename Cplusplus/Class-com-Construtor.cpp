@@ -5,7 +5,7 @@ private:
     int x, y;
 
 public:
-    teste(int a, int b);
+    teste(int a, int b); // o construtor deve ter o mesmo nome da class e não pode ter return e o corpo da função pode ser escrito fora da class
 
 };
 
