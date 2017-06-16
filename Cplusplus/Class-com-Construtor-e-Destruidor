@@ -1,0 +1,27 @@
+#include <cstdio>
+
+class testando{
+private:
+    void *ponteiro;
+public:
+    testando(unsigned int x) // Construtor
+    {
+        printf("\n\nConstrutor Iniciado ...");
+    ponteiro = new char[x];
+    }
+
+    ~testando() // O Destruidor pode ser usado como as ultimas operações da class, como, por exemplo salvar dados no HD ou Banco de dados ou criar Log
+    {
+        delete ponteiro;
+        printf("\n\nDestrutor finalizado...\n\n");
+    }
+
+
+};
+
+
+main(){
+
+testando(5); // O Destruidor é inicializado automaticamente após o construtor terminar
+
+}
