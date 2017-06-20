@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdio>
 #include <cstring>
 
 using namespace std;
@@ -19,5 +20,10 @@ main(){
         cout << "palavra [" << i << "] = " << palavra[i] << endl;
     }
     
+    int largura = (strlen(palavra)-1)/2; // quero que exiba até a metade
+    printf("\n%d\n", largura);
+    
+    cout.width(largura); // limitei a quantidade de caracteres que serão exibitos, sendo que a largura é a metade da quantidade de caracteres da variável
+    cout << palavra; // por algum motivo o width no cout não está funcionando
     
 }
