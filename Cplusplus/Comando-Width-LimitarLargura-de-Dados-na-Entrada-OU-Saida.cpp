@@ -25,5 +25,15 @@ main(){
     
     cout.width(largura); // limitei a quantidade de caracteres que serão exibitos, sendo que a largura é a metade da quantidade de caracteres da variável
     cout << palavra; // por algum motivo o width no cout não está funcionando
+    /*
+     
+     Segundo o curso:C++ - Desenvolvimento Orientado a Objeto; Fundação Bradesco
+     
+     Você também pode usar a função width() para fluxos de saída. No exemplo mostrado abaixo, o valor de x é exibido em um campo com cinco caracteres. Se o comprimento de x for maior que 5, então a configuração da função width() será ignorada e o valor inteiro de x será exibido.
+     
+     
+     */
+    
+    
     
 }
