@@ -27,10 +27,10 @@ main(){
 
 
 
-    arquivo.close(); // fechar arquivo
+    arquivo.close(); // fechar conexao com o arquivo
 
-    infile.close(); // fechar arquivo
+    infile.close(); // fechar conexao com o arquivo
 
-    outline.close(); // fechar arquivo
+    outline.close(); // fechar conexao com o arquivo
 
 }
