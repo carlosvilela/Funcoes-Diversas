@@ -7,7 +7,7 @@ const char* NomeArquivo = "exemplo.txt";
 
 main(){
 
-ofstream outline(NomeArquivo, ios::out); // abrir aruivo em modo saida
+ofstream outline(NomeArquivo, ios::out); // cria ou abre aruivo em modo saida
 
 
 }
