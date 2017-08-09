@@ -1,6 +1,6 @@
 #include <stdio.h> // printf. scanf
 #include <stdlib.h> // pause
-#include <conio.h> // getch
+#include <conio.h> // getch, getche
 
 int main(int argc, char** argv[]){
 
