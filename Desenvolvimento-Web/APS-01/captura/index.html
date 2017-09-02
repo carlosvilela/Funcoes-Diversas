@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Captura</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <div>Você foi Hackeado !! Se Ferrou!!!!</div>
+        <script>
+            // http://output.jsbin.com/qawiyiqisu/1/?lang=pt&page=home
+            //https://pt.stackoverflow.com/questions/65696/como-capturar-par%C3%A2metros-passados-pela-url-usando-javascript
+           var query = location.search.slice(1);
+           var partes = query.split('&');
+           var data = {};
+           partes.forEach(function (parte) {
+                var chaveValor = parte.split('=');
+                var chave = chaveValor[0];
+                var valor = chaveValor[1];
+                data[chave] = valor;
+           });
+
+            alert(JSON.stringify(data, null, 4)); // Object {lang: "pt", page: "home"}
+        </script>
+    </body>
+</html>
