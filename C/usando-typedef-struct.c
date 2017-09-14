@@ -17,6 +17,10 @@ typedef struct{
 } Contato;
 
 main(){
+	
+	Contato t;
+	
+	t.aniversario.ano = 10;
 
 
 }
